@@ -17,6 +17,12 @@ def divide(a, b):
         raise ValueError("Cannot divide by zero")
     return a / b
 
+def multiply(a, b):
+    """
+    Multiplies a and b
+    """
+    return a * b
+
 def main():
     """Main function to demonstrate the calculations module."""
     print("Addition of 10 and 5:", add(10, 5))
@@ -25,6 +31,7 @@ def main():
         print("Division of 10 by 0:", divide(10, 0))
     except ValueError as e:
         print("Error:", e)
+    print("Multiplication of 10 and 5", multiply(10, 5))
 
 # This block allows the script to be run directly
 if __name__ == '__main__':
